@@ -2,18 +2,25 @@ import React, {Component} from 'react';
 import Product from './Product';
 import Productdes from './Productdes';
 class App extends Component{
-    state={
-        page: 'home'
+    /*state={
+        page: 'Product',
+     
     }
-    click = (pageName) =>{
-        this.setState({page: pageName})
+   /* click (pageName){
+        this.setState({page: pageName});
     }
+*/
+      /*  set=(pageName)=>{
+            this.setState({page: pageName})
+        }*/
     render(){
-        return <div>
-            <button onClick={()=>this.click('home')}>Home</button>
-            <button onClick={()=>this.click('about')}>About</button>
-            {this.state.page === 'home' ? <Product/> :<Productdes/>}
-            
+        return <div>     
+           { /*{this.state.page === 'Product' ? <Product/>:<Productdes/>}
+           <Productdes backClick={this.click}/>
+           Question: Does it again render from this line 
+           if i change the state property
+           */}
+           <Product/>     
         </div>
     }
 }
