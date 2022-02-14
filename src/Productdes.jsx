@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+/*import React, {Component} from 'react';*/
+import React, {useState} from 'react';
 import Product from './Product';
 
 
-class Productdes extends Component{
+/*class Productdes extends Component{
     state={
        page: 'Productdes'
     }
@@ -23,7 +24,7 @@ class Productdes extends Component{
    /* set=()=>{
         this.props.backChild(this.state.set);
     }*/
-    set=(pageName)=>{
+    /*set=(pageName)=>{
         this.props.condition(null)
     }
     render(){
@@ -33,13 +34,22 @@ class Productdes extends Component{
        <h2>Hi I am product desc {this.props.category}</h2>
        <button onClick={()=>this.set(null)}>Back</button>
        {/*{this.state.page === 'Product' ? <Product/> : <Productdes/>}
-       */}
-       {/*
+       */
+       /*
        <Product/> 
        IF i do this it is still mounting the product class first ? 
        Hiearchy ? 
-       */}
-       </>
+       */
+      /* </>
     }
+}
+export default Productdes;*/
+const Productdes=({selectedProduct,click})=>{
+
+    return <>
+       <h2>Description: {selectedProduct.description}</h2>
+       <h2>Category {selectedProduct.category}</h2>
+       <button onClick={()=>click(null)}>Back</button>
+    </>
 }
 export default Productdes;
