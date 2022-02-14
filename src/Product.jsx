@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Productdes from './Productdes';
-
+import './Product.css'
 class Product extends Component{
     state={
         selectedProduct: null,
@@ -50,14 +50,14 @@ class Product extends Component{
        return <> 
       {this.state.selectedProduct === null ? 
       
-        <div>
-            <h2>Hi, I am a Product Page</h2>
+        <div className ='product'>
+          
             {this.state.products.map(product => (
-           <li key={product.id}>
-           <h2> Name: {product.name}</h2>
-           <h2> Name: {product.price}</h2>
+           <ul key={product.id}>
+           <li> Name: {product.name}</li>
+           <li> Price: {product.price}</li>
            <button onClick={()=>this.click(product)}>Show Details</button>
-           </li>
+           </ul>
            
             ))}
             </div>

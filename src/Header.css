@@ -1,0 +1,45 @@
+/*................ navbar...........*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .main-nav {
+    float: center;
+    list-style:none;
+    background-color: #207567;
+    overflow: hidden;
+  
+  }
+ .main-nav li {
+    display: inline;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-right: 20px;
+  }
+  .main-nav li a {
+    color:  #DFEAE2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: 'Great Vibes', cursive;
+  }
+  .main-nav li a:visited,
+.main-nav li a:link {
+  color:  #DFEAE2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.9s;
+  font-family: 'Great Vibes', cursive;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color:  #DFEAE2;
+  border-bottom: 2px solid #ccafaf;
+  padding-bottom:2px;
+}
+/*........navbar end............. */

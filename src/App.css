@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 0px;
+  font-family: 'Great Vibes', cursive;
+}

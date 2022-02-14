@@ -1,0 +1,11 @@
+.product ul{
+  list-style-type: none;
+  margin: 20px;
+  padding: 20px;
+}
+.product ul li {
+    display: block;
+    width: 250px;
+    padding: 5px;
+  }
+ 

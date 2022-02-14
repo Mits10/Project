@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Product from './Product';
-import Productdes from './Productdes';
+import Header from './header';
+import Sidebar from './Sidebar';
+import './App.css';
 class App extends Component{
     /*state={
         page: 'Product',
@@ -20,7 +22,11 @@ class App extends Component{
            Question: Does it again render from this line 
            if i change the state property
            */}
-           <Product/>     
+           <Sidebar/>
+           <div className ='main'>
+           <Header/>
+           <Product/>   
+           </div>  
         </div>
     }
 }
